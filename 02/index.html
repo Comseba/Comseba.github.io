@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <!-- ???span colspan / rowspan  -->
+        <tr>
+          <th>이름</th>
+          <th>나이</th>
+          <th>점수</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="2">A<br />B</td>
+          <td>20</td>
+          <td>50</td>
+        </tr>
+        <tr>
+          <!-- <td>B</td> -->
+          <td>10</td>
+          <td>10</td>
+        </tr>
+        <tr>
+          <td>C</td>
+          <td colspan="2">5000</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table>
+      <caption>
+        서울대학교 컴퓨터공학부 과목
+      </caption>
+      <tr>
+        <th colspan="2">컴퓨터공학부</th>
+        <th colspan="2">전기/정보공학부</th>
+      </tr>
+      <tr>
+        <th>교과목번호</th>
+        <th>교과목명</th>
+        <th>교과목번호</th>
+        <th>교과목명</th>
+      </tr>
+      <tr>
+        <td>M1522.000700<br />(4190.201)</td>
+        <td>논리설계</td>
+        <td rowspan="2">430.201A</td>
+        <td rowspan="2">논리설계 및 실험</td>
+      </tr>
+      <tr>
+        <td>4190.202A</td>
+        <td>논리설계실험</td>
+      </tr>
+    </table>
+    <form action="http://www.naver.com" method="get">
+      <label for="이름입력txt">이름을 입력하세요</label>
+      <input type="text" id="이름입력txt" />
+      <p>비번 입력하세요<input type="password" /></p>
+      <input type="radio" name="gender" checked />남
+      <input type="radio" name="gender" />여
+      <input type="checkbox" checked />
+      <br />
+
+      <select name="" id="">
+        <optgroup label="옵션 그룹 1">
+          <option value="1">a</option>
+          <option value="2">b</option>
+        </optgroup>
+        <optgroup label="옵션 그룹 1">
+          <option value="3">집가기</option>
+          <option value="4">보강하기</option>
+        </optgroup>
+      </select>
+
+      <button type="reset">리셋</button>
+      <button type="submit">로그인</button>
+    </form>
+  </body>
+</html>
