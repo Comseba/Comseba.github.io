@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      table, th, td {
+          border: 1px solid black;
+      }
+  </style>
   </head>
   <body>
     <table>
@@ -58,7 +63,7 @@
         <td>논리설계실험</td>
       </tr>
     </table>
-    <form action="http://www.naver.com" method="get">
+    <form action="http://www.naver.com" method="get" id="제출form">
       <label for="이름입력txt">이름을 입력하세요</label>
       <input type="text" id="이름입력txt" />
       <p>비번 입력하세요<input type="password" /></p>
@@ -67,19 +72,22 @@
       <input type="checkbox" checked />
       <br />
 
-      <select name="" id="">
-        <optgroup label="옵션 그룹 1">
-          <option value="1">a</option>
-          <option value="2">b</option>
-        </optgroup>
-        <optgroup label="옵션 그룹 1">
-          <option value="3">집가기</option>
-          <option value="4">보강하기</option>
-        </optgroup>
+      <label for="학급dropdown">반을 선택하세요</label>
+      <select name="학급dropdown" id="학급dropdown">
+       
+          <option value="1">1학년1반</option>
+          <option value="2">1학년2반</option>
+
+
+          <option value="3">2학년1반</option>
+          <option value="4">2학년2반</option>
+  
       </select>
 
       <button type="reset">리셋</button>
       <button type="submit">로그인</button>
     </form>
+    
+    <textarea form="제출form" name="" id=""></textarea>
   </body>
 </html>
