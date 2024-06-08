@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+ 
+        #box{
+            /* animation: name 1s timing delay; */
+            width: 10vw;
+            height: 10vh;
+            background-color: red;
+            line-height: 0px;
+
+        } 
+
+        #box:hover{
+            animation: test 1s;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes test{
+            0%{
+                width: 10vw;
+                line-height: 0px;
+            }
+                
+            100%{
+                width: 20vw;
+                line-height: 20px;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="box">
+        le<br/> wef
+    </div>
+</body>
+</html>
